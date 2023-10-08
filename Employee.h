@@ -12,7 +12,9 @@ private:
     string Email;
     float WorkingHour;
     public:
+    Employee();
     Employee(int EmployeeID,string Name,string Email,float WorkingHour);
+    ~Employee();
     void showEmployeeDetails();
 };
 #endif

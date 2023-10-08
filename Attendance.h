@@ -12,6 +12,8 @@ private:
     string CheckOutTime;
     string Date;
     public:
+    Attendance(int EmployeeID);
+    ~Attendance();
     void checkIn();
     void checkOut();
 };

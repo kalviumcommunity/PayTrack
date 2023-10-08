@@ -13,6 +13,8 @@ private:
 
 public:
     LeaveApplication(int EmployeeID, string LeaveType, string StartDate, string EndDate);
+    LeaveApplication(const LeaveApplication &other);
+    ~LeaveApplication();
     void ShowLeaveApplication();
 };
 #endif

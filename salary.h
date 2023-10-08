@@ -11,6 +11,7 @@ class Salary{
 
     public:
     Salary(int EmployeeID,double HourlyRate,double TotalHoursWorked);
+    ~Salary();
     void calculateSalary();
 };
 #endif

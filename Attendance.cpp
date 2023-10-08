@@ -2,6 +2,13 @@
 #include <iostream>
 using namespace std;
 #include <ctime>
+
+Attendance::Attendance(int EmployeeID){
+this->EmployeeID=EmployeeID;
+}
+Attendance::~Attendance(){
+cout<<"Attendance destructor called"<<endl;
+}
 void Attendance::checkIn(){
     time_t currentTime;
     time(&currentTime);

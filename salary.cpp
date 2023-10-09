@@ -8,5 +8,5 @@ Salary::~Salary(){
     cout<<"Salary destructor called"<<endl;
 }
 void Salary::calculateSalary(){
-    cout<<this->HourlyRate*this->TotalHoursWorked;
+    cout<<"Rs."<<this->HourlyRate*this->TotalHoursWorked<<endl;
 }

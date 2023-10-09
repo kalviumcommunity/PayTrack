@@ -14,8 +14,8 @@ Employee::~Employee(){
 }
 
 void Employee::showEmployeeDetails(){
-    cout<<this->EmployeeID<<endl;
-    cout<<this->Name<<endl;
-    cout<<this->Email<<endl;
-    cout<<this->WorkingHour<<endl;
+    cout<<"employeeID:"<<this->EmployeeID<<endl;
+    cout<<"name:"<<this->Name<<endl;
+    cout<<"email:"<<this->Email<<endl;
+    cout<<"WorkingHour:"<<this->WorkingHour<<endl;
 }

@@ -21,8 +21,8 @@ LeaveApplication::LeaveApplication(const LeaveApplication &other){
     cout<<"LeaveApplication Copy constructor called"<<endl;
 }
 void LeaveApplication::ShowLeaveApplication(){
-    cout<<this->EmployeeID<<endl;
-    cout<<this->LeaveType<<endl;
-    cout<<this->StartDate<<endl;
-    cout<<this->EndDate<<endl;
+    cout<<"employeeID:"<<this->EmployeeID<<endl;
+    cout<<"Leave type:"<<this->LeaveType<<endl;
+    cout<<"Start Date:"<<this->StartDate<<endl;
+    cout<<"End Date:"<<this->EndDate<<endl;
 }

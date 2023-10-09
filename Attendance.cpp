@@ -14,12 +14,12 @@ void Attendance::checkIn(){
     time(&currentTime);
 
     this->CheckInTime=ctime(&currentTime);
-    cout<<CheckInTime;
+    cout<<"check-in time"<<CheckInTime;
 }
 
 void Attendance::checkOut(){
     time_t currentTime;
     time(&currentTime);
     this->CheckOutTime=ctime(&currentTime); 
-    cout<<CheckInTime;
+    cout<<"check-out time"<<CheckInTime;
 }

@@ -27,6 +27,7 @@ int main()
     cin >> workingHour;
     cin.ignore();
     Employee employee1(employeeID, name, email, workingHour);
+    Employee employee2(employeeID, name, email, workingHour);
     employee1.showEmployeeDetails();
 
     Attendance attendance1(employeeID);
@@ -48,4 +49,7 @@ int main()
     Salary salary1(employeeID, workingHour, hourlypay);
     salary1.calculateSalary();
     attendance1.checkOut();
+    Employee::getTotalEmployees();
+    LeaveApplication::ShowLeaveCount();
+
 }

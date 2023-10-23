@@ -1,4 +1,4 @@
-# include "salary.h"
+# include "Salary.h"
 Salary::Salary(int EmployeeID, double HourlyRate,double TotalHoursWorked){
 this -> EmployeeID = EmployeeID;
 this -> HourlyRate = HourlyRate;

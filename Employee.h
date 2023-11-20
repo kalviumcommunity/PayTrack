@@ -6,7 +6,7 @@ using namespace std;
 
 class Employee
 {
-private:
+protected:
     int EmployeeID;
     string Name;
     string Email;
@@ -16,7 +16,7 @@ private:
     Employee();
     Employee(int EmployeeID,string Name,string Email,float WorkingHour);
     ~Employee();
-    void showEmployeeDetails();
+    virtual void showEmployeeDetails() = 0;
     static void getTotalEmployees();
 };
 #endif

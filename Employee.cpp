@@ -19,13 +19,13 @@ Employee::~Employee()
     totalEmployees--;
 }
 
-void Employee::showEmployeeDetails()
-{
-    cout << "employeeID:" << this->EmployeeID << endl;
-    cout << "name:" << this->Name << endl;
-    cout << "email:" << this->Email << endl;
-    cout << "WorkingHour:" << this->WorkingHour << endl;
-}
+// void Employee::showEmployeeDetails()
+// {
+//     cout << "employeeID:" << this->EmployeeID << endl;
+//     cout << "name:" << this->Name << endl;
+//     cout << "email:" << this->Email << endl;
+//     cout << "WorkingHour:" << this->WorkingHour << endl;
+// }
 
  void Employee::getTotalEmployees()
 {

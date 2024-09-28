@@ -2,6 +2,8 @@
 #include "Attendance.h"
 #include "LeaveApplication.h"
 #include "Salary.h"
+#include "HREmp.h"
+#include "TechnicalEmp.h"
 #include <iostream>
 #include <vector>
 #include <cstdlib> // for system("pause")
@@ -53,7 +55,7 @@ int main() {
         cin >> choice;
 
         switch (choice) {
-            case 1: // Add New Employee
+            case 1: // Add New Employee 
                 {
                     clearScreen();
                     string name, email;
@@ -74,7 +76,19 @@ int main() {
                     cout << "Enter working hour: ";
                     cin >> workingHour;
 
-                    employees.push_back(new Employee(employeeID++, name, email, workingHour));
+                    // Create either TechnicalEmp or HREmp
+                    int empType;
+                    cout << "Enter 1 for Technical Employee, 2 for HR Employee: ";
+                    cin >> empType;
+
+                    if (empType == 1) {
+                        employees.push_back(new TechnicalEmp(employeeID++, name, email, workingHour));
+                    } else if (empType == 2) {
+                        employees.push_back(new HREmp(employeeID++, name, email, workingHour));
+                    } else {
+                        displayError("Invalid employee type. Please try again.");
+                        break;
+                    }
 
                     // Display the "Employee added Successfully" message for a few seconds
                     cout << "Employee added successfully!\n";

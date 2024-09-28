@@ -3,14 +3,15 @@
 # include <iostream>
 using namespace std;
 
+template <typename T>
 class Salary{
     private:
     int EmployeeID;
-    double HourlyRate;
-    double TotalHoursWorked;
+    T HourlyRate;
+    T TotalHoursWorked;
 
     public:
-    Salary(int EmployeeID,double HourlyRate,double TotalHoursWorked);
+    Salary(int EmployeeID,T HourlyRate,T TotalHoursWorked);
     ~Salary();
     void calculateSalary();
 };
